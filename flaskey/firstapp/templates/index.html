@@ -1,15 +1,5 @@
-<html>
-    <head>
-	    	{% if title %}
-		<title>{{ title }} - Microblog</title>
-		{% else %}
-		<title>no title</title>
-		{% endif %}
+{% extends "base.html" %}
 
-    </head>
-    <body>
-        <h1>Henlo, {{ user }} !</h1>
-
-
-    </body>
-</html>
+{% block content%}
+        <h1>Henlo, {{ date }} !</h1>
+{% endblock %}
