@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
 {% block content%}
-        <h1>Henlo, {{ date }} !</h1>
+        <h1>Henlo, {{ current_user.username }}</h1? 
+	<div><p>Your last commit was at <b>{{ date }}</b></p></div>
 {% endblock %}
